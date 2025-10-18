@@ -3,17 +3,17 @@
 
 class Fixed {
     private:
-        int _number_value;
-        static const int bites;
+        int _fixed_point;
+        static const int _bits;
     public:
         //constructor
         Fixed();
         //destructor
         ~Fixed();
         //copy constructor
-        Fixed(const Fixed &other);
+        Fixed(const Fixed &copy);
         //copy assignment
-        Fixed &operator=(const Fixed &other);
+        Fixed &operator=(const Fixed &copy);
         int getRawBits( void ) const;
         void setRawBits( int const raw );
 
