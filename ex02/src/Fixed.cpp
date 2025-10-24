@@ -44,3 +44,11 @@ int Fixed::toInt() const {
 float Fixed::toFloat() const {
     return this->_fixed_point / float(1 << _bits);
 }
+
+Fixed &Fixed::min(Fixed &value1, Fixed &value2) {
+    return value1._fixed_point > value2._fixed_point ? value1 : value2;
+}
+
+Fixed &Fixed::min(const Fixed &value1, const Fixed &value2) {
+    return &value1._fixed_point > value2._fixed_point ? &value1 : &value2;
+}
