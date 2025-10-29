@@ -6,26 +6,25 @@ const int Fixed::_bits = 8;
 //Orthodox Canonical Form constructor, destructor, copy, copy assignment
 //constructor
 Fixed::Fixed(){
-    std::cout << "Constructor called\n";
+    std::cout << "Default constructor called" << std::endl;
     this->_fixed_point = 0;
 }
 
 //destructor
 Fixed::~Fixed() {
-    std::cout << "Destructor called\n";
-
+    std::cout << "Default destructor called" << std::endl;
 }
 
 //copy constructor
 Fixed::Fixed(const Fixed &copy) {
-    std::cout << "Copy constructor called\n";
+    std::cout << "Copy constructor called" << std::endl;
     this->_fixed_point = copy._fixed_point;
 
 }
 
 //copy assignment
 Fixed& Fixed::operator=(const Fixed &copy) {
-    std::cout << "Copy assignment constructor called\n";
+    std::cout << "Copy assignment constructor called" << std::endl;
     if (this != &copy) {
         this->_fixed_point = copy._fixed_point;
     }

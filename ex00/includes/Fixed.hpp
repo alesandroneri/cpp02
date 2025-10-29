@@ -6,15 +6,17 @@ class Fixed {
         int _fixed_point;
         static const int _bits;
     public:
-        //constructor
+
+        // canonical form
         Fixed();
-        //destructor
         ~Fixed();
-        //copy constructor
         Fixed(const Fixed &copy);
-        //copy assignment
         Fixed &operator=(const Fixed &copy);
+
+        // getter
         int getRawBits( void ) const;
+
+        // setter
         void setRawBits( int const raw );
 
 };
