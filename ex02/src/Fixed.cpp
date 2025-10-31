@@ -78,7 +78,7 @@ bool Fixed::operator>=(const Fixed &other) const {
 }
 
 bool Fixed::operator<(const Fixed &other) const {
-    return this->_fixed_point > other._fixed_point;
+    return this->_fixed_point < other._fixed_point;
 }
 
 bool Fixed::operator<=(const Fixed &other) const {
