@@ -7,6 +7,7 @@ class Fixed {
     private:
         int _fixed_point;
         static const int _bits;
+
     public:
         // canonical form
         Fixed();
@@ -16,13 +17,13 @@ class Fixed {
         Fixed(const Fixed &copy);
         Fixed &operator=(const Fixed &copy);
 
-        // getter
+        // getters
         int getRawBits( void ) const;
 
-        // setter
+        // setters
         void setRawBits( int const raw );
 
-        // other methods
+        // other methods of the class
         float toFloat( void ) const;
         int toInt( void ) const;
 

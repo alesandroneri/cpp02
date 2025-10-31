@@ -4,6 +4,7 @@
 const int Fixed::_bits = 8;
 
 //Orthodox Canonical Form constructor, destructor, copy, copy assignment
+
 //constructor
 Fixed::Fixed(){
     std::cout << "Default constructor called" << std::endl;

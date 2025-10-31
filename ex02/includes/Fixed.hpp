@@ -18,10 +18,10 @@ class Fixed {
         Fixed(const float float_value);
         Fixed(const int integer_value);
 
-        // getter
+        // getters
         int getRawBits(void ) const;
 
-        // setter
+        // setters
         void setRawBits( int const raw );
 
         // comparison operators overload

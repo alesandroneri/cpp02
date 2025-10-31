@@ -5,18 +5,18 @@ class Fixed {
     private:
         int _fixed_point;
         static const int _bits;
-    public:
 
+    public:
         // canonical form
         Fixed();
         ~Fixed();
         Fixed(const Fixed &copy);
         Fixed &operator=(const Fixed &copy);
 
-        // getter
+        // getters
         int getRawBits( void ) const;
 
-        // setter
+        // setters
         void setRawBits( int const raw );
 
 };
